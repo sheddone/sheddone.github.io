@@ -1,2 +1,2 @@
 # sheddone
-arage, shed &amp; flat clear-outs in Christchurch
+Garage, shed &amp; flat clear-outs in Christchurch
