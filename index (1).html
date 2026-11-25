@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shed &amp; Done | Garage, shed &amp; flat clear-outs, Christchurch</title>
+<meta name="description" content="Two local lads with a van. Garage, shed and flat clear-outs across Christchurch. Fixed prices, dump fees included.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* ====== EASY EDITS ======
+     Phone number, email and booking link are in the HTML below.
+     Search for: 021 000 0000, hello@sheddone.co.nz, BOOKING_LINK
+  */
+  :root { --accent: #FFD43B; --ink: #111111; --muted: #444444; --line: #DDDDDD; --soft: #F4F4F4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: #FFFFFF; }
+  a { color: var(--ink); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, .logo, .price, .num { font-family: 'Space Grotesk', sans-serif; }
+  h2 { margin: 0; font-size: 40px; letter-spacing: -1px; }
+  .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 16px 28px; border-radius: 10px; font-weight: 600; font-size: 18px; text-decoration: none; }
+  .btn-main { background: var(--accent); color: var(--ink); }
+  .btn-line { border: 2px solid var(--ink); color: var(--ink); }
+  .btn-small { padding: 12px 20px; font-size: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .ph { background: #EFEFEF; border: 2px dashed #BBBBBB; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; color: #555555; padding: 16px; }
+
+  header { border-bottom: 1px solid #E6E6E6; }
+  header .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding-top: 18px; padding-bottom: 18px; }
+  .logo { font-weight: 700; font-size: 24px; letter-spacing: -0.5px; }
+
+  .hero { padding: 88px 24px 72px; display: flex; flex-direction: column; gap: 24px; }
+  .hero h1 { margin: 0; font-size: clamp(40px, 7vw, 76px); line-height: 1.02; letter-spacing: -2px; max-width: 900px; }
+  .hero p { margin: 0; font-size: 20px; line-height: 1.5; color: var(--muted); max-width: 640px; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .stats { display: flex; flex-wrap: wrap; gap: 20px; font-size: 15px; color: var(--muted); }
+  .stats strong { color: var(--ink); }
+
+  .dark { background: var(--ink); color: #FFFFFF; }
+  .dark .wrap { padding-top: 72px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 40px; }
+  .step { display: flex; flex-direction: column; gap: 12px; }
+  .step .num { font-weight: 700; font-size: 48px; color: var(--accent); }
+  .step h3 { margin: 0; font-size: 22px; }
+  .step p { margin: 0; font-size: 17px; line-height: 1.55; color: #CCCCCC; }
+
+  section.block { padding-top: 88px; padding-bottom: 0; display: flex; flex-direction: column; gap: 32px; }
+  .sub { margin: 0; font-size: 18px; color: var(--muted); line-height: 1.55; }
+
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px; }
+  .card.pop { border: 3px solid var(--ink); background: var(--accent); padding: 30px; }
+  .card .name { font-weight: 600; font-size: 18px; }
+  .price { font-weight: 700; font-size: 52px; letter-spacing: -1.5px; }
+  .card .size { font-size: 16px; color: #555555; }
+  .card.pop .size { color: var(--ink); }
+  .card p { margin: 0; font-size: 16px; line-height: 1.55; }
+  .tag { font-size: 13px; font-weight: 600; background: var(--ink); color: #FFFFFF; padding: 4px 10px; border-radius: 99px; }
+
+  .grey { background: var(--soft); margin-top: 88px; }
+  .grey .wrap { padding-top: 72px; padding-bottom: 72px; }
+  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
+  .two h2 { font-size: 32px; }
+  .two p { margin: 0; font-size: 17px; line-height: 1.6; color: #333333; }
+
+  .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .pair .ph { height: 220px; }
+  .caption { font-size: 15px; color: var(--muted); margin-top: 10px; }
+
+  .review { border: 1px solid var(--line); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+  .review p { margin: 0; font-size: 17px; line-height: 1.55; color: #333333; }
+
+  .book { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; align-items: start; }
+  .panel { background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+  .panel h3 { margin: 0; font-size: 20px; }
+  .panel ul { margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #333333; }
+  .bands { font-size: 15px; line-height: 1.7; color: #333333; }
+
+  footer { border-top: 1px solid #E6E6E6; margin-top: 0; }
+  footer .wrap { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #555555; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Shed &amp; Done</div>
+    <a class="btn btn-main btn-small" href="tel:0210000000">Call for a quote</a>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <h1>Your garage, cleared in an afternoon.</h1>
+  <p>Two local lads with a van. We load it, sort it and take it away: sheds, garages and flats across Christchurch. Dump fees included, no surprises.</p>
+  <div class="row">
+    <a class="btn btn-main" href="#book">Book a Sunday slot</a>
+    <a class="btn btn-line" href="tel:0210000000">Call for a quote</a>
+  </div>
+  <!-- Fill these in once you have real numbers, or delete this block -->
+  <div class="stats">
+    <div><strong>★★★★★ [X] reviews</strong></div>
+    <div>[X] garages cleared</div>
+    <div>[X]kg kept out of landfill</div>
+  </div>
+  <!-- Swap for a real photo: <img src="hero.jpg" alt="..." style="width:100%;border-radius:16px"> -->
+  <div class="ph" style="height: 440px; margin-top: 24px; border-radius: 16px;">[Photo: you two with the van, or a packed van outside a cleared garage]</div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="step"><div class="num">1</div><h3>Book a slot</h3><p>Pick a Sunday time and tell us your suburb. Or just call or text us.</p></div>
+      <div class="step"><div class="num">2</div><h3>Get a quote</h3><p>We text you a price. Send a couple of photos and it'll be spot on.</p></div>
+      <div class="step"><div class="num">3</div><h3>We clear it</h3><p>We do all the lifting, sweep up after, and you get your space back.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap block">
+  <h2>Before &amp; after</h2>
+  <div class="grid">
+    <div>
+      <div class="pair"><div class="ph">[Before]</div><div class="ph">[After]</div></div>
+      <div class="caption">[Suburb] · [Single garage] · [Half van]</div>
+    </div>
+    <div>
+      <div class="pair"><div class="ph">[Before]</div><div class="ph">[After]</div></div>
+      <div class="caption">[Suburb] · [Garden shed] · [Small load]</div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap block" id="pricing">
+  <div>
+    <h2>Simple prices</h2>
+    <p class="sub">Loading, dump fees and travel within Christchurch all included.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="name">Quarter load</div>
+      <div class="price">$219</div>
+      <div class="size">About ¼ van (~1 m³)</div>
+      <p>Our minimum. A few bulky items plus some boxes, about a ute load.</p>
+    </div>
+    <div class="card pop">
+      <div class="row" style="justify-content: space-between;"><div class="name">Half load</div><div class="tag">Most popular</div></div>
+      <div class="price">$359</div>
+      <div class="size">About ½ van (~2 m³)</div>
+      <p>A garden shed, or a garage corner that's got out of hand.</p>
+    </div>
+    <div class="card">
+      <div class="name">Three-quarter load</div>
+      <div class="price">$479</div>
+      <div class="size">About ¾ van (~3 m³)</div>
+      <p>A well-stocked shed or most of a single garage.</p>
+    </div>
+    <div class="card">
+      <div class="name">Full load</div>
+      <div class="price">$599</div>
+      <div class="size">Whole van (~4 m³)</div>
+      <p>A packed single garage or a flat move-out.</p>
+    </div>
+    <div class="card">
+      <div class="name">Extra full loads</div>
+      <div class="price">+$449</div>
+      <div class="size">Each extra van load</div>
+      <p>Double garages and deceased estates are often 2–3 loads. We'll tell you up front.</p>
+    </div>
+  </div>
+  <div class="two" style="gap:32px">
+    <div class="panel" style="border:1px solid var(--line)">
+      <h3>Bulky &amp; heavy extras</h3>
+      <ul>
+        <li>Couch or armchair: +$40 each</li>
+        <li>Mattress or bed base: +$35 each</li>
+        <li>Fridge, freezer or washing machine: +$45 each</li>
+        <li>Upstairs or long carry: +$50</li>
+        <li>Piano, spa pool, soil, concrete or bricks: quote only</li>
+      </ul>
+    </div>
+    <div class="panel" style="border:1px solid var(--line)">
+      <h3>What fits in a full load?</h3>
+      <ul>
+        <li>3 couches + 2 mattresses, or</li>
+        <li>1 couch, a fridge, a washing machine + 15 boxes, or</li>
+        <li>About 50 moving boxes, or</li>
+        <li>A single garage that's about half full</li>
+      </ul>
+      <p class="sub" style="font-size:15px">Send us photos and we'll tell you which size it is. Price is confirmed once loaded, before we start.</p>
+    </div>
+  </div>
+</section>
+
+<section class="grey">
+  <div class="wrap two">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <h2>Less landfill, lower price</h2>
+      <p>Anything we take becomes ours. We reuse, resell, donate or recycle as much as we can, which keeps your old stuff out of the tip and keeps your price down.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <h2>What we take</h2>
+      <p>Furniture, mattresses, boxes, old tools, bikes, garden gear, general junk.</p>
+      <p><strong>We can't take:</strong> asbestos, chemicals, paint, gas bottles or anything hazardous.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Only put REAL reviews here. Delete this section until you have some. -->
+<section class="wrap block">
+  <h2>What customers say</h2>
+  <div class="grid">
+    <div class="review"><div>★★★★★</div><p>[Real review from your first customer]</p><strong>[First name], [Suburb]</strong></div>
+    <div class="review"><div>★★★★★</div><p>[Real review]</p><strong>[First name], [Suburb]</strong></div>
+    <div class="review"><div>★★★★★</div><p>[Real review]</p><strong>[First name], [Suburb]</strong></div>
+  </div>
+</section>
+
+<section class="grey" id="book">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <div>
+      <h2>Book a Sunday slot</h2>
+      <p class="sub" style="margin-top:12px">Pick a time online. Booked slots disappear, so what you see is what's free.</p>
+    </div>
+    <div class="book">
+      <div class="panel">
+        <h3>1. Pick your slot</h3>
+        <p class="sub" style="font-size:16px">You'll be asked for your suburb, phone, a rough size of the pile, and anything big or heavy.</p>
+        <!-- Paste your Google Calendar booking page link where it says BOOKING_LINK -->
+        <a class="btn btn-main" href="BOOKING_LINK" target="_blank" rel="noopener">See free Sunday slots</a>
+      </div>
+      <div class="panel">
+        <h3>2. Measure the pile (rough is fine)</h3>
+        <ul>
+          <li>Length × width × height, in metres</li>
+          <li>Anything heavy: fridge, piano, couch, stairs</li>
+          <li>A couple of photos, texted to us</li>
+        </ul>
+        <div class="bands">~1 m³ ≈ Quarter load · ~2 m³ ≈ Half load · ~3 m³ ≈ Three-quarter load · ~4 m³ ≈ Full load</div>
+      </div>
+    </div>
+    <div class="row">
+      <span style="font-size:16px;color:#444444">Rather talk to someone?</span>
+      <a class="btn btn-line btn-small" href="tel:0210000000">Call 021 000 0000</a>
+      <a class="btn btn-line btn-small" href="sms:0210000000">Text us photos</a>
+      <a class="btn btn-line btn-small" href="mailto:hello@sheddone.co.nz">Email us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Shed &amp; Done · Christchurch</div>
+    <div>Garage, shed &amp; flat clear-outs</div>
+  </div>
+</footer>
+
+</body>
+</html>
